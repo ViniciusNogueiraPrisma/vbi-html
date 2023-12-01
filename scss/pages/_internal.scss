@@ -1,0 +1,248 @@
+/* Css que faz a imagem dar zoom */
+
+.full-screen-main-div {
+    position: relative;
+    overflow-y: auto;
+  
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+    display: block !important;
+    -webkit-overflow-scrolling: touch;
+  
+    &.zoomDiv{
+      overflow-x: scroll;
+      width: 100%;
+      max-height: 500px;
+  
+      @media (max-width: 767.98px) {
+        max-height: 400px;
+      }
+  
+      @media (max-width: 575.98px){
+        max-height: 320px;
+      }
+  
+      @media (max-width: 375px){
+        max-height: 230px;
+      }
+    }
+  
+    img {
+      &.openImgZoom{
+        max-width: 1200px;
+      }
+    }
+  }
+
+.header-interno{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+
+  .info-header-interno{
+    padding: 211px 0 40px;
+
+    .header-title{
+      color: var(--text-white);
+      font-weight: 400;
+    }
+
+    .list-history-page{
+      margin-bottom: 0;
+      padding: 0;
+
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      li{
+        font-size: rem(14);
+        
+        img{
+          margin-right: 8px;
+        }
+
+        a{
+          text-decoration: none;
+          color: var(--text-grey-scale-03);
+
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+
+        &:not(:last-child){
+          display: flex;
+          align-items: center;
+          
+          a{
+            display: flex;
+            align-items: center;
+            line-height: 100%;
+          }
+
+          &::after{
+            content: "";
+            display: block;
+            margin-left: 8px;
+            margin-right: 8px;
+            width: 12px;
+            height: 12px;
+            background-image: url('../images/icons/icon-arrow-right-small.svg');
+          }
+        }
+
+        &.active{
+          a{
+            color: var(--text-white);
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-compartilhar{
+  padding-top: 24px;
+  padding-bottom: 64px;
+}
+
+.flex-compartilhar{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--text-grey-scale-02);
+  padding-top: 16px;
+
+  span{
+    color: var(--text-azul-1);
+    font-size: rem(14);
+    margin-right: 8px;
+  }
+
+  ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0;
+
+    li{
+      &:not(:last-child){
+        margin-right: 8px;
+      }
+    }
+  }
+  
+}
+
+#mainInternal > section{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.flex-header-filtro{
+  display: flex;
+  justify-content: space-between;
+
+  h2{
+    margin-bottom: 0;
+  }
+}
+
+.filtro-form{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+  margin-top: 0;
+
+  @media (max-width: 475px){
+    flex-direction: column;
+  }
+}
+
+.form-select-filtro{
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  gap: 4px;
+  background-color: transparent;
+  border: 1px solid var(--text-grey-scale-04);
+
+  padding: 8px;
+
+  @media (min-width: 475px){
+    &:not(:last-child){
+      margin-right: 16px;
+    }
+  }
+
+  @media (max-width: 475px){
+    margin-bottom: 12px;
+  }
+
+  label{
+    font-size: rem(10);
+    color: var(--text-color);
+  }
+
+  select{
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    padding: 3px 30px 3px 0px;
+    font-size: rem(14);
+    min-width: 135px;
+
+    background-image: url("../images/icons/icon-arrow-down-full.svg");
+
+    option{
+      color: var(--pure-black);
+    }
+  }
+}
+
+.img-perfil-corporativo, .img-missao-riweb, .img-missao-riweb{
+    img{
+      max-width: 480px;
+      width: 100%;
+      max-height: 350px;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+}
+
+.img-missao-riweb{
+  img{
+    max-height: 397px;
+  }
+}
+
+.img-valores-empresa{
+  img{
+    max-height: 420px;
+  }
+}
+
+
+.img-sustentabilidade-100{
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+}
+
+.section-nossa-visao{
+  padding: 145px 0 85px !important;
+  background-image: url("../images/bg-nossa-visao.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (max-width: 991px){
+    background-position: top left;
+  }
+
+  h2,p{
+    color: var(--text-white);
+  }
+}

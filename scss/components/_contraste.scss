@@ -1,0 +1,256 @@
+[data-theme="dark"] {
+  background-color: #1d1d1d;
+
+  // Font Family
+
+  // Text Colors
+
+  --text-color: #ffffff;
+
+  --text-white: #ffffff;
+  --text-black: #ffffff;
+
+  --text-primary-01-default: #ffffff;
+  --text-primary-01-var-1: #ffffff;
+  --text-primary-01-var-2: #ffffff;
+
+  --text-secondary-01-default: #ffffff;
+  --text-secondary-01-var-1: #ffffff;
+  --text-secondary-01-var-2: #ffffff;
+
+  --text-grey-scale-00: #ffffff;
+  --text-grey-scale-01: #ffffff;
+  --text-grey-scale-02: #ffffff;
+  --text-grey-scale-03: #ffffff;
+  --text-grey-scale-04: #ffffff;
+  --text-grey-scale-05: #ffffff;
+
+  --text-grey-scale-c4: #ffffff;
+
+  --text-disabled: #ffffff;
+
+  // Solid Colors
+
+  --pure-white: #1d1d1d;
+  --pure-black: #1d1d1d;
+
+  --primary-01-default: #1d1d1d;
+  --primary-01-var-1: #1d1d1d;
+  --primary-01-var-2: #1d1d1d;
+
+  --secondary-01-default: #1d1d1d;
+  --secondary-01-var-1: #1d1d1d;
+  --secondary-01-var-2: #1d1d1d;
+
+  --grey-scale-00: #1d1d1d;
+  --grey-scale-01: #1d1d1d;
+  --grey-scale-02: #1d1d1d;
+  --grey-scale-03: #1d1d1d;
+  --grey-scale-04: #1d1d1d;
+  --grey-scale-05: #1d1d1d;
+  --grey-scale-06: #1d1d1d;
+  --grey-scale-07: #1d1d1d;
+  --grey-scale-F2F2: #1d1d1d;
+
+  --system-disabled: #bfbfbf;
+
+  // --system-link: #1a0dab;
+  --system-link: #008bff;
+  --system-link-visited: #1b1466;
+  --system-negative: #d23a20;
+  --system-alert: #ecb307;
+  --system-positive: #1e986f;
+}
+
+//ajustes
+[data-theme="dark"] {
+  .avisos-container .dropdown-menu-alerta .list-avisos a {
+    span {
+      color: #000;
+    }
+
+    p {
+      color: #000;
+    }
+  }
+
+  .headerFixoMenu.menu-bar:not(.not-transparent) .header button img {
+    filter: none !important;
+  }
+
+  .menu-bar .content .header-right-side .button-storys-open {
+    border: none;
+  }
+
+  .icon-exibir {
+    filter: contrast(0.5) brightness(18.5);
+  }
+
+  .buttons-group {
+    a {
+      background-color: #1d1d1d;
+      border: 1px solid var(--text-white);
+    }
+  }
+
+  .disclaimer {
+    a {
+      color: #008bff !important;
+    }
+  }
+
+  .logo-colorida {
+    filter: contrast(0.5) brightness(18);
+  }
+
+  #loginModal {
+    .modal-dialog {
+      .modal-content {
+        .header-modal {
+          h2 {
+            color: #000;
+          }
+        }
+
+        .modal-body {
+          p {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+
+  .form-login {
+    .div-input {
+      border: 1px solid #000;
+
+      label {
+        color: #000;
+      }
+    }
+  }
+
+  .link-com-arrow::after,
+  .link-com-download::after {
+    filter: contrast(0.5) brightness(18);
+  }
+
+  .flex-compartilhar {
+    img {
+      filter: contrast(0.5) brightness(18);
+    }
+  }
+
+  .headerFixoMenu.not-transparent {
+    .header-right-side {
+      .button-login-header {
+        img {
+          filter: contrast(7.5) brightness(18) !important;
+        }
+      }
+
+      .button-storys-open {
+        border: none;
+
+        img {
+          filter: contrast(7.5) !important;
+        }
+      }
+    }
+  }
+
+  .list-paginacao li.active a {
+    border: 1px solid white !important;
+  }
+
+  .ui-datepicker-header .ui-corner-all .ui-icon::after {
+    filter: contrast(0.5) brightness(18);
+  }
+
+  .list-downloads li > div > img {
+    filter: contrast(0.5) brightness(18);
+  }
+
+  .form-select-filtro select {
+    filter: contrast(0.5) brightness(18);
+  }
+
+  .form-login > a {
+    color: var(--primary-01-var-2) !important;
+  }
+
+  .form-login button {
+    color: var(--text-color) !important;
+  }
+
+  .form-login button:hover {
+    color: var(--text-white) !important;
+  }
+
+  .table tbody tr td {
+    color: var(--text-white) !important;
+  }
+
+  .table tbody tr td.not-active img {
+    filter: contrast(0.5) brightness(18);
+  }
+
+  .form-login button:hover {
+    background-color: var(--primary-01-var-2);
+  }
+
+  .form-login .create-account-link a:hover {
+    color: #000 !important;
+  }
+
+  .nav-timeline .slick-current.item::after {
+    background-color: #008bff !important;
+  }
+
+  .form-mailing-home button {
+    background-color: var(--text-white);
+    color: var(--grey-scale-00);
+  }
+
+  .mailing-home-1 button {
+    color: var(--grey-scale-00) !important;
+  }
+
+  .primary-button {
+    color: var(--text-white) !important;
+  }
+
+  .primary-button:hover {
+    color: #000 !important;
+  }
+
+  .info-result-banner > a {
+    color: #000 !important;
+  }
+
+  .mailing-3 {
+    .div-input {
+      input::placeholder {
+        color: #fff !important;
+      }
+    }
+  }
+
+  .accordion .accordion-header button:not(.collapsed) {
+    background-color: #fff;
+    color: #000;
+  }
+
+  .accordion .accordion-header button.collapsed:hover {
+    background-color: #fff !important;
+  }
+
+  .accordion .accordion-header button::after {
+    color: var(--grey-scale-00);
+  }
+
+  .buttons-group a:hover {
+    color: #fff !important;
+  }
+}

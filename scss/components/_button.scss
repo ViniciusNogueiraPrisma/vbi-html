@@ -1,0 +1,103 @@
+.primary-button, .secondary-button {
+	box-shadow: none;
+
+	border: 1px solid;
+	border-radius: 2px;
+
+	padding: 8px 24px;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: rem(14);
+	font-weight: 600;
+	line-height: rem(24.8);
+
+	text-align: center;
+	text-decoration: none;
+
+	transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out !important;
+	transition-timing-function: cubic-bezier(0, 0, 0.2, 1) !important;
+
+	&:disabled {
+		cursor: not-allowed;
+
+		border-color: var(--system-disabled);
+		color: var(--text-white);
+		background-color: var(--system-disabled);
+
+		&:hover, &:focus {
+			border-color: inherit;
+			color: inherit;
+			background-color: inherit;
+		}
+	}
+}
+
+.primary-button {
+	//anterior 
+	// border-color: var(--text-primary-01-default);
+	border-color: var(--grey-scale-05);
+	color: var(--pure-white);
+	background-color: var(--grey-scale-05);
+	border-radius: 2px;
+
+	&:hover {
+		border-color: var(--text-primary-01-var-1);
+		color: var(--pure-white);
+		background-color: var(--text-primary-01-var-1);
+	}
+
+	&:focus, &:active {
+		border-color: var(--text-primary-01-var-2);
+		background-color: var(--text-primary-01-var-2);
+		color: var(--text-primary-01-default);
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+
+		border-color: var(--system-disabled);
+		color: var(--text-white);
+		background-color: var(--system-disabled);
+
+		&:hover, &:focus {
+			border-color: inherit;
+			color: inherit;
+			background-color: inherit;
+		}
+	}
+}
+
+.secondary-button {
+	border-color: var(--text-secondary-01-default);
+	color: var(--text-primary-01-default);
+	background-color: transparent;
+
+	&:hover {
+		border-color: var(--text-secondary-01-var-1);
+		color: var(--text-secondary-01-var-1);
+		background-color: transparent;
+	}
+
+	&:focus {
+		border-color: var(--text-secondary-01-var-2);
+		color: var(--secondary-01-default);
+		background-color: var(--text-secondary-01-var-2);
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+
+		border-color: var(--system-disabled);
+		color: var(--system-disabled);
+		background-color: transparent;
+
+		&:hover, &:focus {
+			border-color: inherit;
+			color: inherit;
+			background-color: inherit;
+		}
+	}
+}

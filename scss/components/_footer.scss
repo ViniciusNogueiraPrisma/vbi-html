@@ -1,0 +1,228 @@
+.footer {
+  background-color: var(--primary-01-default);
+  // padding: 8px 0;
+  padding: 16px;
+
+  margin-top: auto;
+
+  .footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+
+    @media (max-width: 450px) {
+      gap: 19px;
+    }
+
+    @media (max-width: 375px) {
+      flex-direction: column;
+    }
+
+    .direitos-reservados {
+      @media (max-width: 767px) {
+        flex: 100%;
+      }
+    }
+
+    p {
+      color: var(--text-white);
+      font-size: 12px;
+      margin: 0;
+    }
+
+    .byRiweb {
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: 12px;
+      }
+
+      img {
+        flex-shrink: 0;
+        margin-left: 12px;
+      }
+    }
+
+    .termos-condicoes {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+
+      @media (max-width: 400px) {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+
+      li {
+        a {
+          color: var(--text-white);
+          font-size: 12px;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        &:not(:last-child) {
+          a {
+            gap: 8px;
+            margin-right: 8px;
+
+            &::after {
+              content: "";
+              width: 1px;
+              height: 13px;
+              background-color: var(--text-white);
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-fixed {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-01-default);
+  padding: 11px 0;
+  z-index: 200;
+  max-height: calc(100% - 66px);
+  overflow-y: auto;
+
+  @media (max-width: 500px) {
+    position: relative;
+  }
+
+  .top-footer-fixed {
+    display: flex;
+    align-items: center;
+
+    .iframe-cotacoes {
+      height: 27px;
+      flex: 1;
+
+      iframe {
+        height: 27px;
+        width: 100%;
+      }
+    }
+
+    .button-mapa-site {
+      background: none;
+      border: none;
+      color: var(--text-white);
+      align-items: center;
+      gap: 16px;
+      padding: 0;
+      display: flex;
+
+      margin-right: 20px;
+
+      @media (max-width: 375px) {
+        justify-content: center;
+      }
+
+      span {
+        font-size: 12px;
+      }
+
+      i {
+        transition: 0.3s ease;
+        font-size: rem(12);
+      }
+
+      &.active {
+        i {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  .list-menu-footer {
+    display: flex;
+    gap: 42px;
+    width: 100%;
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    &.show {
+      display: flex;
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    > div {
+      width: calc(100% / 4);
+
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+
+      h5 {
+        margin-top: 0;
+        color: var(--text-white);
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 12px;
+
+        @media (max-width: 375px) {
+          text-align: center;
+        }
+      }
+
+      ul {
+        padding: 0;
+        margin-bottom: 0;
+
+        @media (max-width: 375px) {
+          text-align: center;
+        }
+
+        li {
+          a {
+            font-size: 12px;
+            color: var(--text-grey-scale-02);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+
+            @media (max-width: 375px) {
+              justify-content: center;
+            }
+          }
+          /*
+                    &.link-externo {
+                        a {
+                            &::after {
+                                content: url("../../images/icon/icon-externo.svg");
+                                height: 16px;
+                            }
+                        }
+                    }*/
+        }
+      }
+    }
+  }
+}
